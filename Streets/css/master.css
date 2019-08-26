@@ -1,0 +1,72 @@
+body{
+	margin:0;
+	padding:0;
+	background-image: linear-gradient(rgb(0,0,0,0.7),rgb(0,0,0,0.7)), url(../image/rawpixel-678089-unsplash-1500x650.jpg);
+	background-position:center;
+	background-attachment:fixed;
+	background-size:cover;
+	background-repeat:no-repeat;
+}
+
+.container{
+	background-color: #AA7F55;
+	height:420px;
+	width:320px;
+	color:#FFFFFF;
+	top:50%;
+	left:50%;
+	position:absolute;
+	transform: translate(-50%,-50%);
+	box-sizing:border-box;
+	padding:0 15px;
+	opacity:1;
+	border-radius:5px 3px 5px 3px;
+	font-weight: 900;
+	}
+	
+.age{
+	width:100px;
+	height:100px;
+	position:absolute;
+	top:-50px;
+	left: 100px;
+	opacity: 0.8;}
+	
+.container h1{
+	font-family::Verdana, Arial, Helvetica, sans-serif;
+	text-align:center;
+	padding:25px 0px 0px 0px;}
+
+label{ font-weight:bold;
+	}
+
+input[type=text]{
+	background:#AA7F55;
+	border-right:none;
+	border-top:none;
+	border-left:none;
+	padding:10px 50px 0 0;
+	margin:0 0 3px 0;
+	}
+
+input[type=password]{
+	background:#AA7F55;
+	border-right:none;
+	border-top:none;
+	border-left:none;
+	padding:10px 50px 0 0;
+	margin:0 0 3px 0;
+	}
+ button{
+	background-color:#3ae2f2;
+	color:#FFFFFF;
+	border:none;
+	border-radius:10px;
+	padding:10px 100px;
+	font-weight:bold;
+	margin:10px 0 0 0;}
+
+	
+button:focus{
+	background:#D4BF55;
+	color:#0A0020;}

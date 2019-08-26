@@ -1,0 +1,268 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.body_home{
+    background-image:linear-gradient(rgb(0,0,0,0.9),rgb(0,0,0,0.3)), url('../image/bg-banner02.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    height:80% ;
+    margin-top:-100px;
+    position: inherit; 
+}
+
+.container{
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/*header*/
+#head{
+    min-height: 70px;
+    display: flex;
+    position:fixed;
+    width: 100%;
+    top:-10px;
+    background-color: rgb(32, 32, 41);
+    opacity: 0.8;
+}
+
+#head ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header ul a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    opacity: 0.5;
+}
+
+#head ul li{
+    display: inline;
+    padding: 3px;
+}
+
+.branding{
+flex: 1;
+margin-top: 20px;
+margin-left:180px ;
+}
+.brand{
+flex: 2;
+margin-top: 40px;
+
+}
+
+.current{
+    color: darkgoldenrod;
+    opacity: 1;
+}
+
+#head a:hover{
+    color: darkgoldenrod;
+    opacity: 1;
+}
+
+/*laa*/
+.laa{
+    text-align: center;
+    width: 60%;
+    padding-top:100px;
+    box-sizing: border-box;
+    margin:100px auto;
+    position: inherit;
+    min-height: 580px; 
+}
+
+.laa  .show1{
+    line-height:2.5;
+}
+
+.laa  .show1 h1{
+    font-size:50px;
+}
+
+.show3{
+    margin-top: 50px;
+}
+
+
+ .btn1,.btn2{
+    padding: 15px 10px;
+    text-decoration: none;
+    margin-right:15px;
+    border-radius: 60px;
+}
+
+.btn1{
+    color: white;
+    background-color: darkgoldenrod;
+}
+
+.btn2{
+    color:  darkgoldenrod;
+    border: 1px solid  darkgoldenrod;
+}
+
+#step{
+padding-top:5%;
+}
+
+
+
+#wot,.too{
+    margin-top:5px ;
+    display:flex;
+    justify-content: space-between;
+}
+.wot1,.too1{
+    padding-right: 20px;
+    padding-bottom:80px; 
+    box-sizing: border-box;
+     width: 30%;
+}
+
+.goo{
+    background-color: rgba(202, 193, 193, 0.2);
+    line-height: 1.5;
+    padding-top: 40px;
+    position: inherit;
+    padding-top:50px;
+}
+
+.doo{
+width: 90%;
+margin:0 auto;
+text-align: center;
+padding-bottom: 10px;
+qbox-sizing: border-box;
+}
+
+.do1 h1{
+font-size: 50px;
+}
+.do1 p{
+    font-size: 20px;
+}
+
+.do2{
+    border-top: 3px solid darkgoldenrod;
+    width: 3%;
+    margin:40px auto 0 auto;
+}
+
+#out{
+    
+    text-align: left;
+    line-height: 1.2;
+    color: rgb(85, 78, 78);
+    margin-top:50px;
+    width: 90%;
+    box-sizing: border-box;
+}
+#out h1{
+font-size: 30px;
+line-height: 1;
+}
+#out #noo{
+    font-size: 70px;
+    font-weight: bolder;
+}
+
+#out a{
+    text-decoration: none;
+    color: darkgoldenrod;
+}
+
+#out .roo{
+    margin-top: 20px;
+}
+
+
+.jool{
+    width: 90%;
+    margin:0 auto;
+    overflow: hidden;
+    position: inherit;
+    color: rgb(85, 78, 78);
+    padding-top: 70px;
+}
+.joel1{
+    text-align: center
+}
+
+.joel1 h1{
+    font-size: 40px;
+}
+.joel1 p{
+    font-size:19px;
+}
+.joe img{
+    width: 380px;
+    height: 250px;
+}
+.joe{
+    padding-top:40px ;
+    display: flex;
+    justify-content: space-between;
+}
+
+.joe1{
+    flex: 1;
+    width: 30%;
+    padding-right:10px;
+    box-sizing: border-box;
+
+}
+.joe1:hover{animation: book;
+animation-duration: 1s;
+animation-iteration-count: 1;
+animation-fill-mode: forwards;
+}
+
+    @keyframes book{
+         0%{transform: rotateY(0deg);}
+        100%{transform: rotateY(180deg);}
+    }
+
+    .joe2{
+        flex: 1;
+        width: 30%;
+        padding-right:10px;
+        box-sizing: border-box;
+        }
+
+ .joe3{
+    flex: 1;
+     width: 30%;
+    padding-right:10px;
+    box-sizing: border-box;animTION
+                }
+ .joe4{
+    flex: 1;
+     width: 30%;
+    padding-right:10px;
+    box-sizing: border-box;
+    }
+.joe5{
+       flex: 1;
+        width: 30%;
+       padding-right:10px;
+     box-sizing: border-box;
+    }
+.joe6{
+    flex: 1;
+    width:30%; 
+    padding-right:10px;
+    box-sizing: border-box;
+   }

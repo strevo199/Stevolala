@@ -1,0 +1,64 @@
+/* CSS Document */
+body{
+margin:0;
+padding:0;
+font-family:Verdana, Arial, Helvetica, sans-serif;}
+
+#pic{
+	background-image: url(../image/img_lights.jpg);
+	background-position:center;
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	padding-bottom:100%;
+	width:70%;
+	height:100%;
+	opacity:1;
+	float:left;}
+#pic:hover{
+	opacity:0.7;}
+	
+#red{
+	position:relative;
+	float:right;
+	width:30%;
+	height:100%
+	overflow:hidden;
+	top:50px;
+	left:50px;}
+	
+#red [type=text]{
+	padding:10px 100px 3px 0;
+	border-left:none;
+	border-right:none;
+	border-top:none;
+	}
+	
+#red [type=email]{
+	padding:10px 100px 3px 0;
+	border-left:none;
+	border-right:none;
+	border-top:none;
+	}
+
+#red [type=password]{
+	padding:10px 100px 3px 0;
+	border-left:none;
+	border-right:none;
+	border-top:none;
+	}
+	
+#red button{
+	background-color:#7e8123;
+	color:#ffffff;
+	border:none;
+	padding: 5px 40px;
+	border-radius: 20px;}
+	
+#red button:hover{
+	font-weight:bold;
+	color:#000000;}
+#red button:focus{
+	background-color:#ffffff;
+	color:#7e8123;
+	border:dotted #7e8123 2px;}

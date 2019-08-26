@@ -1,0 +1,309 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font:16px/1.4 Arial, Helvetica, sans-serif;
+    padding: 20px;
+}
+.home-body{
+    position: relative;
+    background-image:linear-gradient(to right top, rgba(128, 128, 128, 1),rgba(0, 0, 0, 0.4)) ,url(../image/header.jpg);
+    height: 95vh;
+    
+    margin-bottom:50px; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80vh);
+}
+.cover{
+    width: 95%;
+    position: fixed;
+    margin: auto;
+    display: flex;
+}
+
+#header-logo{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    flex: 1;
+}
+
+.logo{
+    width: 100px;
+    clip-path: circle(50%)
+}
+.head-man{
+    flex: 2;
+    margin-left:15%;
+    margin-top:55px;
+    color: white;   
+}
+.head-man >h1{
+    font-weight: lighter;
+}
+.head-nav{
+flex: 2;
+margin-top:61px;
+}
+.head-nav a{
+    text-decoration: none;
+    color: white;
+    font-weight:bold;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+.head-nav li{display: inline;
+    list-style: none;
+    padding-right:15px;: 
+}
+
+.head-nav ul{
+    margin: 0;
+    padding: 0;
+
+}
+
+#current{
+    color: darkgoldenrod;
+    font-weight: bold;
+}
+
+.head-nav a:hover{
+    text-decoration: underline;
+    font-size: larger;
+}
+
+.primary-header{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 90%;
+    transform: translate(-50%,-50%);
+    color: white;
+    text-align: center;
+}
+
+.primary-header >.primary-header-1{
+    font-size: 25px;
+    text-transform: capitalize;
+    line-height: 1.7;
+}
+.darkgold{
+    background-color: rgba(184, 135, 11, 0.397);
+}
+
+.primary-header >.primary-header-2{
+    letter-spacing: 15px;
+    font-weight: bold;
+    padding-bottom:60px; 
+}
+.primary-header-3 a{
+color: white;
+text-transform: uppercase;
+text-decoration: none;
+border: 1px solid white;
+padding: 20px 25px;
+border-radius: 60px;
+letter-spacing: 3px;
+/* box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.6); */
+box-shadow:-5px 5px rgba(0, 0, 0, 0.7), 0 0 5px rgba(184, 135, 11, 0.637);  
+
+}
+
+.primary-header-3 :hover{
+   font-weight:bolder;
+   box-shadow:-5px 5px rgba(0, 0, 0, 0.4), 0 0 5px darkgoldenrod;  
+}
+/*about*/
+#about{
+    position: relative;
+}
+.about-main{
+    position: relative;
+     background-image:linear-gradient(to right top,rgba(184, 135, 11, 0.582),rgba(0, 0, 0, 0.8)), url(../image/IMG-20190813-WA0000.jpg);
+    height: 95vh;
+    background-position: right;
+    background-attachment: inherit;
+    margin-bottom:20px; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    clip-path: polygon(0 0, 56% 0, 50% 100%, 0% 100%);
+
+}
+
+.four{
+    background-color: rgba(128, 128, 128, 0.034);
+    position: absolute;
+    width: 40%;
+    top:25%;
+    left:60%;
+    line-height: 2.5;
+    color: gray;
+    margin: 60px;
+}
+#dad-1{
+    background-color: darkgoldenrod;
+    color: white;
+}
+#dad{
+    color: darkgoldenrod;
+    background-color: rgba(0, 0, 0, 0.349);
+    display: inline-block;
+    margin-right: 10px;
+}
+
+/*portfolio*/
+
+
+.cover-me{
+    display: flex;
+    position: relative;
+    width: 80%;
+    margin: 40px auto 70px auto;
+}
+
+.flip3D{
+    width: 340px;
+    height: 300px;
+    margin: 10px;
+    flex: 1;
+}
+
+.flip3D >.front{
+    position: absolute;
+    -webkit-transform: perspective(600px) rotateY(0deg);
+    transform: perspective(600px) rotateY(0deg);
+    background-color: #fc0;
+    width: 320px;
+    height: 280px;
+    border-radius: 20px;
+    backface-visibility: hidden;
+    transition: -webkit-transform .5s linear 0s;
+    transition: transform .5s linear 0s;
+    border-radius: 20px;
+}
+
+.flip3D >.back{
+    position: absolute;
+    -webkit-transform: perspective(600px) rotateY(180deg);
+    transform: perspective(600px) rotateY(180deg);
+    background-color:black;
+    width: 320px;
+    border-radius: 20px;
+    height: 280px;
+    backface-visibility: hidden;
+    transition: -webkit-transform .5s linear 0s;
+    transition: -webkit-transform .5s linear 0s;
+}
+
+
+.flip3D:hover >.front{
+    -webkit-transform: perspective(600px) rotateY(-180deg);
+    transform: perspective(600px) rotateY(-180deg);
+}
+
+.flip3D:hover >.back{
+    -webkit-ransform: perspective(600px) rotateY(0deg);
+    transform: perspective(600px) rotateY(0deg);
+}
+
+.back p{
+    color:white;
+    background-color: rgba(218, 165, 32, 0.519);
+    height: 70%;
+    text-align: center;
+    padding-top: 25%;
+    text-shadow: 3px black;
+    clip-path: polygon(0 0,100% 0, 100% 70%, 0 100% );
+}
+
+
+.step a{
+    border: 2px solid white;
+    margin-left:50%;
+    color: darkorange;
+    text-decoration: none;
+    padding:10px 15px ;
+    border-radius: 30px;
+
+}
+.front img{
+    border-radius: 10px;
+}
+
+.back a:hover{
+    font-weight: bold;
+}
+.contact-body{
+    position: relative;
+    height: 95vh;
+    margin-bottom:20px;}
+    
+.slip{
+margin:0 auto 20px 0;
+text-align: center;
+}
+
+.meme{
+    border-top: 3px solid darkgoldenrod;
+    width: 4%;
+    margin:40px auto 20px auto;
+}
+
+.boss{
+    width: 90%;
+    margin:0  auto;
+    text-align: center;
+}
+
+.contact-la{
+    display: flex;
+    color: gray;
+    text-align: left
+}
+
+.contact-main{
+    flex: 1;
+}
+.contact-d{
+    flex: 1;
+    background-color: rgba(128, 128, 128, 0.028);
+
+}
+
+.contact-main{
+    display: block;
+}
+
+.contact-la h1{
+    font-size: 40px;
+    font-weight: lighter;
+    margin-bottom:20px; 
+}
+
+.contact-main form [type=text]{
+    padding: 15px 200px;
+    box-shadow: 1px 1px 1px;
+    margin-bottom: 10px;
+}
+
+.contact-main form [type=email]{
+    padding: 15px 200px;
+    box-shadow: 1px 1px 1px;
+    margin-bottom: 10px;
+}
+
+.contact-d{
+    padding:20px;
+    display:block;
+    margin-left:20px; 
+}
+.Detail1{
+    padding-bottom:20px;
+
+}
